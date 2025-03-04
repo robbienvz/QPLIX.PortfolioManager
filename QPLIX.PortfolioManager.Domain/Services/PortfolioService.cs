@@ -2,7 +2,6 @@
 using QPLIX.PortfolioManager.Domain.Interfaces;
 using QPLIX.PortfolioManager.Domain.Models;
 using QPLIX.PortfolioManager.Domain.Repositories;
-using System.Transactions;
 
 namespace QPLIX.PortfolioManager.Domain.Services
 {

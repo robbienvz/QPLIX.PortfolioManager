@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPLIX.PortfolioManager.ConsoleApp", "QPLIX.PortfolioManager\QPLIX.PortfolioManager.ConsoleApp.csproj", "{29F34EC3-EF20-47AB-B061-5ACD7D18FD4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPLIX.PortfolioManager.ConsoleApp", "QPLIX.PortfolioManager.ConsoleApp\QPLIX.PortfolioManager.ConsoleApp.csproj", "{29F34EC3-EF20-47AB-B061-5ACD7D18FD4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPLIX.PortfolioManager.Domain", "QPLIX.PortfolioManager.Domain\QPLIX.PortfolioManager.Domain.csproj", "{D282B106-A3A7-4C7C-BD85-002EF3A70961}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPLIX.PortfolioManager.CSVManager", "QPLIX.PortfolioManager.CSVManager\QPLIX.PortfolioManager.CSVManager.csproj", "{4F602FC2-4431-4707-9EC3-1901817BD363}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QPLIX.PortfolioManager.Common", "QPLIX.PortfolioManager.Common\QPLIX.PortfolioManager.Common.csproj", "{9D510A39-2142-4697-8A57-726B2E2C3A61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF9EBCEE-19DB-4D45-B1D8-3549E800B4A2}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

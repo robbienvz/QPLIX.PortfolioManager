@@ -12,6 +12,7 @@ namespace QPLIX.PortfolioManager.CSVManager
         {
             _csvConfiguration = csvConfiguration;
         }
+
         public List<T> ReadCsv<T>(FileType fileType, ClassMap<T> classMap)
         {
             string currentFolder = Directory.GetCurrentDirectory();
@@ -20,10 +21,20 @@ namespace QPLIX.PortfolioManager.CSVManager
 
             if (File.Exists(csvFilePath))
             {
-                using var reader = new StreamReader(csvFilePath);
-                using var csv = new CsvReader(reader, _csvConfiguration);
-                csv.Context.RegisterClassMap(classMap);
-                results = csv.GetRecords<T>().ToList();
+                try
+                {
+                    using var reader = new StreamReader(csvFilePath);
+                    using var csv = new CsvReader(reader, _csvConfiguration);
+                    csv.Context.RegisterClassMap(classMap);
+
+                    results = csv.GetRecords<T>().ToList();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
+
+                    throw;
+                }
             }
 
             return results;
